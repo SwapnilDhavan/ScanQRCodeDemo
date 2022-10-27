@@ -18,7 +18,7 @@ class ImagePicker: NSObject, UINavigationControllerDelegate, UIImagePickerContro
     func PickImage(viewContoller: UIViewController, imageView: UIImageView,completion: @escaping (Bool) -> ()){
         self.imageView = imageView
         self.completion = completion
-        let alert = UIAlertController(title: "Add Profile Picture", message: nil, preferredStyle: .alert)
+        let alert = UIAlertController(title: "Scan/Add QR Code", message: nil, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Take photo", style: .default, handler: { action in
             let image = UIImagePickerController()
             image.delegate = self
