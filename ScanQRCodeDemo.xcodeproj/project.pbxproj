@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		CE0D3273290A5403008CA45B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0D3272290A5403008CA45B /* AppDelegate.swift */; };
-		CE0D3275290A5403008CA45B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0D3274290A5403008CA45B /* SceneDelegate.swift */; };
 		CE0D3277290A5403008CA45B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0D3276290A5403008CA45B /* ViewController.swift */; };
 		CE0D327A290A5403008CA45B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE0D3278290A5403008CA45B /* Main.storyboard */; };
 		CE0D327D290A5403008CA45B /* ScanQRCodeDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE0D327B290A5403008CA45B /* ScanQRCodeDemo.xcdatamodeld */; };
@@ -17,6 +16,15 @@
 		CE0D328D290A5405008CA45B /* ScanQRCodeDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0D328C290A5405008CA45B /* ScanQRCodeDemoTests.swift */; };
 		CE0D3297290A5405008CA45B /* ScanQRCodeDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0D3296290A5405008CA45B /* ScanQRCodeDemoUITests.swift */; };
 		CE0D3299290A5405008CA45B /* ScanQRCodeDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0D3298290A5405008CA45B /* ScanQRCodeDemoUITestsLaunchTests.swift */; };
+		CE0D32AB290A62CD008CA45B /* QrcodeScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0D32AA290A62CD008CA45B /* QrcodeScannerVC.swift */; };
+		CE0D32AF290A63D5008CA45B /* CustomAlert.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE0D32AD290A63D5008CA45B /* CustomAlert.storyboard */; };
+		CE0D32B0290A63D5008CA45B /* CustomAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0D32AE290A63D5008CA45B /* CustomAlertVC.swift */; };
+		CE0D32B2290A643A008CA45B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0D32B1290A643A008CA45B /* Constants.swift */; };
+		CE0D32B4290A646A008CA45B /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0D32B3290A646A008CA45B /* Reachability.swift */; };
+		CE0D32B6290A6546008CA45B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0D32B5290A6546008CA45B /* Extensions.swift */; };
+		CE0D32BA290A80D2008CA45B /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0D32B9290A80D2008CA45B /* ImagePicker.swift */; };
+		CE0D32BC290A833A008CA45B /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0D32BB290A833A008CA45B /* CardView.swift */; };
+		CE0D32BE290A89EA008CA45B /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0D32BD290A89EA008CA45B /* UIImage+Gif.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +47,6 @@
 /* Begin PBXFileReference section */
 		CE0D326F290A5403008CA45B /* ScanQRCodeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScanQRCodeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE0D3272290A5403008CA45B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CE0D3274290A5403008CA45B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CE0D3276290A5403008CA45B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CE0D3279290A5403008CA45B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE0D327C290A5403008CA45B /* ScanQRCodeDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ScanQRCodeDemo.xcdatamodel; sourceTree = "<group>"; };
@@ -51,6 +58,15 @@
 		CE0D3292290A5405008CA45B /* ScanQRCodeDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScanQRCodeDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE0D3296290A5405008CA45B /* ScanQRCodeDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanQRCodeDemoUITests.swift; sourceTree = "<group>"; };
 		CE0D3298290A5405008CA45B /* ScanQRCodeDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanQRCodeDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CE0D32AA290A62CD008CA45B /* QrcodeScannerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QrcodeScannerVC.swift; sourceTree = "<group>"; };
+		CE0D32AD290A63D5008CA45B /* CustomAlert.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CustomAlert.storyboard; sourceTree = "<group>"; };
+		CE0D32AE290A63D5008CA45B /* CustomAlertVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAlertVC.swift; sourceTree = "<group>"; };
+		CE0D32B1290A643A008CA45B /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CE0D32B3290A646A008CA45B /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		CE0D32B5290A6546008CA45B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		CE0D32B9290A80D2008CA45B /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		CE0D32BB290A833A008CA45B /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		CE0D32BD290A89EA008CA45B /* UIImage+Gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Gif.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,12 +117,12 @@
 		CE0D3271290A5403008CA45B /* ScanQRCodeDemo */ = {
 			isa = PBXGroup;
 			children = (
+				CE0D32A9290A5472008CA45B /* Resource */,
+				CE0D32A8290A5469008CA45B /* MyLib */,
+				CE0D32A7290A5451008CA45B /* Controller */,
+				CE0D32A6290A5449008CA45B /* View */,
+				CE0D32A5290A543C008CA45B /* Model */,
 				CE0D3272290A5403008CA45B /* AppDelegate.swift */,
-				CE0D3274290A5403008CA45B /* SceneDelegate.swift */,
-				CE0D3276290A5403008CA45B /* ViewController.swift */,
-				CE0D3278290A5403008CA45B /* Main.storyboard */,
-				CE0D327E290A5404008CA45B /* Assets.xcassets */,
-				CE0D3280290A5404008CA45B /* LaunchScreen.storyboard */,
 				CE0D3283290A5404008CA45B /* Info.plist */,
 				CE0D327B290A5403008CA45B /* ScanQRCodeDemo.xcdatamodeld */,
 			);
@@ -128,6 +144,62 @@
 				CE0D3298290A5405008CA45B /* ScanQRCodeDemoUITestsLaunchTests.swift */,
 			);
 			path = ScanQRCodeDemoUITests;
+			sourceTree = "<group>";
+		};
+		CE0D32A5290A543C008CA45B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE0D32A6290A5449008CA45B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE0D3278290A5403008CA45B /* Main.storyboard */,
+				CE0D3280290A5404008CA45B /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE0D32A7290A5451008CA45B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CE0D32AA290A62CD008CA45B /* QrcodeScannerVC.swift */,
+				CE0D3276290A5403008CA45B /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CE0D32A8290A5469008CA45B /* MyLib */ = {
+			isa = PBXGroup;
+			children = (
+				CE0D32BD290A89EA008CA45B /* UIImage+Gif.swift */,
+				CE0D32BB290A833A008CA45B /* CardView.swift */,
+				CE0D32B9290A80D2008CA45B /* ImagePicker.swift */,
+				CE0D32B3290A646A008CA45B /* Reachability.swift */,
+				CE0D32B1290A643A008CA45B /* Constants.swift */,
+				CE0D32AC290A63D5008CA45B /* CustomAlertDialog */,
+				CE0D32B5290A6546008CA45B /* Extensions.swift */,
+			);
+			path = MyLib;
+			sourceTree = "<group>";
+		};
+		CE0D32A9290A5472008CA45B /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				CE0D327E290A5404008CA45B /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		CE0D32AC290A63D5008CA45B /* CustomAlertDialog */ = {
+			isa = PBXGroup;
+			children = (
+				CE0D32AD290A63D5008CA45B /* CustomAlert.storyboard */,
+				CE0D32AE290A63D5008CA45B /* CustomAlertVC.swift */,
+			);
+			path = CustomAlertDialog;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +306,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE0D32AF290A63D5008CA45B /* CustomAlert.storyboard in Resources */,
 				CE0D3282290A5404008CA45B /* LaunchScreen.storyboard in Resources */,
 				CE0D327F290A5404008CA45B /* Assets.xcassets in Resources */,
 				CE0D327A290A5403008CA45B /* Main.storyboard in Resources */,
@@ -261,10 +334,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE0D32B4290A646A008CA45B /* Reachability.swift in Sources */,
 				CE0D3277290A5403008CA45B /* ViewController.swift in Sources */,
+				CE0D32AB290A62CD008CA45B /* QrcodeScannerVC.swift in Sources */,
+				CE0D32BE290A89EA008CA45B /* UIImage+Gif.swift in Sources */,
+				CE0D32B6290A6546008CA45B /* Extensions.swift in Sources */,
+				CE0D32BC290A833A008CA45B /* CardView.swift in Sources */,
 				CE0D3273290A5403008CA45B /* AppDelegate.swift in Sources */,
-				CE0D3275290A5403008CA45B /* SceneDelegate.swift in Sources */,
+				CE0D32B0290A63D5008CA45B /* CustomAlertVC.swift in Sources */,
+				CE0D32BA290A80D2008CA45B /* ImagePicker.swift in Sources */,
 				CE0D327D290A5403008CA45B /* ScanQRCodeDemo.xcdatamodeld in Sources */,
+				CE0D32B2290A643A008CA45B /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,11 +524,15 @@
 				DEVELOPMENT_TEAM = NP9F5SF99V;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ScanQRCodeDemo/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "For using scan qrcode.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "For using scan qrcode.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -472,11 +556,15 @@
 				DEVELOPMENT_TEAM = NP9F5SF99V;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ScanQRCodeDemo/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "For using scan qrcode.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "For using scan qrcode.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment version="2304" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Custom AlertVC-->
+        <scene sceneID="xrb-ux-VTM">
+            <objects>
+                <viewController storyboardIdentifier="CustomAlertVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="eOK-x1-QDb" customClass="CustomAlertVC" customModule="ScanQRCodeDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UAM-vr-moa"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ps3-To-qYL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fri-Bu-9RM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GTz-53-RvI" customClass="CardView" customModule="ScanQRCodeDemo" customModuleProvider="target">
+                                <rect key="frame" x="62.5" y="248.5" width="250" height="170"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="69d-7h-ZGq" customClass="CardView" customModule="ScanQRCodeDemo" customModuleProvider="target">
+                                        <rect key="frame" x="90" y="-35" width="70" height="70"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="error" translatesAutoresizingMaskIntoConstraints="NO" id="SSr-BH-obL">
+                                                <rect key="frame" x="5" y="5" width="60" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="Q87-U3-8Fi"/>
+                                                    <constraint firstAttribute="width" constant="60" id="q4O-I5-Rr2"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="4Mg-iO-YTG"/>
+                                            <constraint firstAttribute="width" constant="70" id="e1H-aa-Stj"/>
+                                            <constraint firstItem="SSr-BH-obL" firstAttribute="centerY" secondItem="69d-7h-ZGq" secondAttribute="centerY" id="eUj-5q-qph"/>
+                                            <constraint firstItem="SSr-BH-obL" firstAttribute="centerX" secondItem="69d-7h-ZGq" secondAttribute="centerX" id="eju-o5-GNR"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerradius">
+                                                <real key="value" value="35"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOffSetHeight">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOffSetWidth">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LCT-rx-QXT">
+                                        <rect key="frame" x="0.0" y="112" width="250" height="50"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZGq-Pv-GbT">
+                                                <rect key="frame" x="0.0" y="0.0" width="125" height="50"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ui8-rl-Y3H" customClass="CustomButton" customModule="ScanQRCodeDemo" customModuleProvider="target">
+                                                        <rect key="frame" x="5" y="5" width="115" height="40"/>
+                                                        <color key="backgroundColor" red="0.5450980392" green="0.76470588240000004" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" title="Yes">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="btnYesTap:" destination="eOK-x1-QDb" eventType="touchUpInside" id="hmH-Tw-P5Z"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="Ui8-rl-Y3H" firstAttribute="leading" secondItem="ZGq-Pv-GbT" secondAttribute="leading" constant="5" id="4jv-xa-O83"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="125" id="75I-FE-Iba"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Ui8-rl-Y3H" secondAttribute="bottom" constant="5" id="OkN-ZV-FOD"/>
+                                                    <constraint firstAttribute="height" constant="50" id="VRu-au-IjD"/>
+                                                    <constraint firstItem="Ui8-rl-Y3H" firstAttribute="top" secondItem="ZGq-Pv-GbT" secondAttribute="top" constant="5" id="tsq-Qe-1XM"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Ui8-rl-Y3H" secondAttribute="trailing" constant="5" id="w7i-zk-slE"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S0t-ze-ZhT">
+                                                <rect key="frame" x="125" y="0.0" width="125" height="50"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="clP-oz-YZ5" customClass="CustomButton" customModule="ScanQRCodeDemo" customModuleProvider="target">
+                                                        <rect key="frame" x="5" y="5" width="115" height="40"/>
+                                                        <color key="backgroundColor" red="0.5450980392" green="0.76470588240000004" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" title="No">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="btnNoTap:" destination="eOK-x1-QDb" eventType="touchUpInside" id="P1L-u9-7Ht"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="clP-oz-YZ5" secondAttribute="trailing" constant="5" id="9cv-Zz-uji"/>
+                                                    <constraint firstAttribute="height" constant="50" id="Sfn-vV-9mg"/>
+                                                    <constraint firstItem="clP-oz-YZ5" firstAttribute="top" secondItem="S0t-ze-ZhT" secondAttribute="top" constant="5" id="hCE-a8-NGb"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="125" id="hWi-OQ-0nA"/>
+                                                    <constraint firstItem="clP-oz-YZ5" firstAttribute="leading" secondItem="S0t-ze-ZhT" secondAttribute="leading" constant="5" id="oWI-tA-L9g"/>
+                                                    <constraint firstAttribute="bottom" secondItem="clP-oz-YZ5" secondAttribute="bottom" constant="5" id="vHp-SF-gFx"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DpK-7i-11P">
+                                        <rect key="frame" x="15" y="81.5" width="220" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SCAN QR DEMO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ffk-Vi-jed">
+                                        <rect key="frame" x="55" y="50" width="140" height="21.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21.5" id="pBK-bu-NOh"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Ffk-Vi-jed" firstAttribute="top" secondItem="GTz-53-RvI" secondAttribute="top" constant="50" id="7zH-Vx-5gr"/>
+                                    <constraint firstItem="LCT-rx-QXT" firstAttribute="leading" secondItem="GTz-53-RvI" secondAttribute="leading" id="ATU-p1-lJQ"/>
+                                    <constraint firstAttribute="width" constant="250" id="DTO-Da-6a1"/>
+                                    <constraint firstAttribute="trailing" secondItem="DpK-7i-11P" secondAttribute="trailing" constant="15" id="PdR-E1-XS8"/>
+                                    <constraint firstItem="69d-7h-ZGq" firstAttribute="top" secondItem="GTz-53-RvI" secondAttribute="top" constant="-35" id="WLN-nT-lq3"/>
+                                    <constraint firstAttribute="trailing" secondItem="LCT-rx-QXT" secondAttribute="trailing" id="cjk-Nt-m2J"/>
+                                    <constraint firstItem="LCT-rx-QXT" firstAttribute="top" secondItem="DpK-7i-11P" secondAttribute="bottom" constant="10" id="hP8-1x-dQT"/>
+                                    <constraint firstAttribute="bottom" secondItem="LCT-rx-QXT" secondAttribute="bottom" constant="8" id="k9F-5K-fd0"/>
+                                    <constraint firstItem="DpK-7i-11P" firstAttribute="leading" secondItem="GTz-53-RvI" secondAttribute="leading" constant="15" id="l8U-Xg-zN7"/>
+                                    <constraint firstItem="Ffk-Vi-jed" firstAttribute="centerX" secondItem="GTz-53-RvI" secondAttribute="centerX" id="mye-IF-3NN"/>
+                                    <constraint firstItem="DpK-7i-11P" firstAttribute="top" secondItem="Ffk-Vi-jed" secondAttribute="bottom" constant="10" id="nXe-iy-lEx"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="170" id="o9y-DV-xmv"/>
+                                    <constraint firstItem="69d-7h-ZGq" firstAttribute="centerX" secondItem="GTz-53-RvI" secondAttribute="centerX" id="vyg-yt-hhQ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.39723695527522934" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="GTz-53-RvI" firstAttribute="centerX" secondItem="fri-Bu-9RM" secondAttribute="centerX" id="7qc-IW-eKj"/>
+                            <constraint firstItem="GTz-53-RvI" firstAttribute="centerY" secondItem="fri-Bu-9RM" secondAttribute="centerY" id="bf1-4r-cIw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnNo" destination="clP-oz-YZ5" id="h2R-fg-HzA"/>
+                        <outlet property="btnYes" destination="Ui8-rl-Y3H" id="mMP-Gc-Vx2"/>
+                        <outlet property="imgResult" destination="SSr-BH-obL" id="41b-uD-Cbw"/>
+                        <outlet property="lblMessageContent" destination="DpK-7i-11P" id="dxv-O1-fMw"/>
+                        <outlet property="uiView" destination="GTz-53-RvI" id="KSv-ME-tMS"/>
+                        <outlet property="viewNo" destination="S0t-ze-ZhT" id="3rQ-ed-Qut"/>
+                        <outlet property="viewYes" destination="ZGq-Pv-GbT" id="W2l-82-wn9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U47-bh-7V1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1463.2" y="-550.07496251874068"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="error" width="128" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
