@@ -109,6 +109,7 @@ class QrcodeScannerVC: UIViewController, AVCaptureMetadataOutputObjectsDelegate 
             return
         }
         
+        
         for metadata in metadataObjects {
             let metadataObj = metadata as! AVMetadataMachineReadableCodeObject
             let code = metadataObj.stringValue
