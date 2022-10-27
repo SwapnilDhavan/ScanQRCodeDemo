@@ -524,6 +524,7 @@
 				DEVELOPMENT_TEAM = NP9F5SF99V;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ScanQRCodeDemo/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Scan QR Code";
 				INFOPLIST_KEY_NSCameraUsageDescription = "For using scan qrcode.";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "For using scan qrcode.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -556,6 +557,7 @@
 				DEVELOPMENT_TEAM = NP9F5SF99V;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ScanQRCodeDemo/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Scan QR Code";
 				INFOPLIST_KEY_NSCameraUsageDescription = "For using scan qrcode.";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "For using scan qrcode.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
